@@ -6,15 +6,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.DosenFragment"
     android:layout_margin="16dp">
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
     <android.support.v7.widget.CardView
         android:id="@+id/cvBus"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        app:cardCornerRadius="0dp">
+        app:cardCornerRadius="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -46,7 +49,8 @@
         android:layout_marginTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        app:cardCornerRadius="0dp">
+        app:cardCornerRadius="10dp"
+        android:id="@+id/dll">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -71,5 +75,107 @@
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/dll"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/dll1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_launcher_background"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="MENU DLL"
+                    android:textColor="#FFFF"
+                    android:textSize="24sp"
+                    android:layout_alignParentBottom="true"/>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/dll1"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/dll2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_launcher_background"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="MENU DLL"
+                    android:textColor="#FFFF"
+                    android:textSize="24sp"
+                    android:layout_alignParentBottom="true"/>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/dll2"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/dll3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_launcher_background"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="MENU DLL"
+                    android:textColor="#FFFF"
+                    android:textSize="24sp"
+                    android:layout_alignParentBottom="true"/>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
     </RelativeLayout>
+
+</ScrollView>
 </FrameLayout>
